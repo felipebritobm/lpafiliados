@@ -1,0 +1,372 @@
+/* Reset and general styles */
+
+/* Estilizando a frase "Seja bem-vindo à Casa de Apostas" */
+.boas-vindas {
+    font-size: 24px;       /* Tamanho da fonte */
+    font-weight: 400;      /* Peso normal */
+    color: #ffffff;        /* Cor do texto */
+    text-align: left;    /* Alinha o texto no centro */
+    margin-bottom: 10px;   /* Espaçamento abaixo da frase */
+}
+
+/* Estilo para o título (h1) */
+h1 {
+    font-family: 'Inter', sans-serif; /* Aplicando a fonte Inter */
+    font-weight: 700; /* Peso da fonte (negrito) */
+    font-size: 64px;  /* Tamanho do título */
+    color: #ffffff;   /* Cor do texto do título */
+}
+
+/* Estilo para o subtítulo (h2) */
+h2 {
+    font-family: 'Inter', sans-serif; /* Aplicando a fonte Inter */
+    font-weight: 200; /* Peso normal */
+    font-size: 32px;  /* Tamanho do subtítulo */
+    color: #ffffff;   /* Cor do texto do subtítulo */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter, sans-serif;
+}
+
+/* Header */
+header {
+    position: relative;
+}
+
+/* Faixa azul do topo */
+.faixa-topo {
+    background-color: #001623; /* Azul escuro */
+    height: 80px; /* Ajuste da altura da faixa */
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo */
+    align-items: center; /* Alinha verticalmente no centro */
+}
+
+/* Logo centralizada */
+.logo-centralizada img {
+    max-width: 150px; /* Ajuste o tamanho da logo (aqui está 150px, você pode mudar) */
+    height: auto;
+}
+
+#title {
+    text-align: center;
+    padding-top: 20px;
+}
+
+#title h1 {
+    margin: 50px;
+}
+
+/* Estilo do contêiner com o fundo */
+.bg-container {
+    display: flex;                 /* Usamos flexbox para alinhar os elementos */
+    justify-content: space-between; /* Espaça os elementos de forma que fiquem nas extremidades */
+    align-items: center;           /* Alinha verticalmente os itens ao centro */
+    padding: 20px;                 /* Espaçamento interno (pode ser ajustado) */
+    background-image: url(/components/images/BG\ HOME.png); /* Defina o caminho da sua imagem */
+    background-size: cover;        /* Faz com que a imagem cubra toda a área do contêiner */
+    background-position: center;   /* Centraliza a imagem de fundo */
+    background-repeat: no-repeat;  /* Evita repetição da imagem */
+    height: 600px;                 /* Altura do contêiner */
+    color: white;                  /* Deixa o texto branco para melhor contraste com o fundo */
+}
+
+/* Estilo do conteúdo de texto (Título e Subtítulo) */
+.text-content {
+    margin-left: 300px;  /* Adiciona uma margem à direita do conteúdo de texto */
+    max-width: 500px;     /* Limita a largura do conteúdo de texto */
+}
+
+/* Estilo do contêiner do formulário */
+.form-container {
+    background-color: #001623;  /* Cor de fundo da caixa com transparência */
+    padding: 30px;                /* Espaçamento interno da caixa */
+    border-radius: 15px;          /* Arredonda os cantos */
+    max-width: 400px;             /* Limita a largura da caixa */
+    width: 100%;                  /* Faz a caixa ocupar a largura disponível até o limite */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave para destacar a caixa */
+    margin-right: 300px;           /* Margem à direita da caixa */
+    z-index: 2;                   /* Garante que o formulário fique acima da imagem de fundo */
+}
+
+/* Estilo do texto explicativo no topo do formulário */
+.form-description {
+    font-size: 18px;               /* Tamanho da fonte */
+    margin-bottom: 20px;           /* Espaçamento abaixo do texto */
+    font-weight: 600;
+    color: #ffffff;                   /* Cor do texto */
+    text-align: center;            /* Centraliza o texto */
+}
+
+/* Estilo do formulário */
+form {
+    display: flex;
+    flex-direction: column;  /* Os campos do formulário serão empilhados */
+    gap: 10px;               /* Espaçamento entre os campos */
+}
+
+input[type="text"], input[type="email"], input[type="tel"] {
+    padding: 10px;
+    font-size: 12px;
+    border: 2px solid #002486;
+    border-radius: 5px;
+}
+
+/* Estilo para o botão de submit */
+input[type="submit"] {
+    padding: 10px;                /* Tamanho do preenchimento dentro do botão */
+    font-size: 16px;              /* Tamanho da fonte */
+    border: none;                 /* Sem borda */
+    border-radius: 8px;           /* Bordas arredondadas */
+    background-color: #FF8F00;    /* Cor de fundo do botão */
+    color: rgb(0, 0, 0);                 /* Cor do texto */
+    cursor: pointer;              /* Cursor em forma de mãozinha ao passar o mouse */
+    width: 200px;                 /* Largura definida do botão */
+    margin-top: 20px;             /* Espaçamento acima do botão */
+    margin-left: auto;            /* Centraliza o botão horizontalmente */
+    margin-right: auto;           /* Centraliza o botão horizontalmente */
+    display: block;               /* Faz o botão ser um bloco e centralizá-lo */
+}
+
+input[type="submit"]:hover {
+    background-color: #FF8F00;    /* Cor do botão ao passar o mouse */
+}
+
+/* Video Section */
+section p {
+    font-weight: bold;  /* Deixa o título em negrito */
+    text-align: center; /* Centraliza o texto */
+    margin-bottom: 20px;
+}
+
+section {
+    background-color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+section video {
+    width: 90%;                /* Define a largura do vídeo para 80% da largura da tela */
+    max-width: 600px;          /* Define um tamanho máximo para o vídeo */
+    height: auto;              /* Mantém a proporção do vídeo */
+    display: block;            /* Faz o vídeo ser exibido como um bloco */
+    margin: 20px auto;         /* Centraliza o vídeo (esquerda e direita) e adiciona margem no topo e embaixo */
+}
+
+.btn-topo {
+    background-color: #FF8F00;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    display: block; 
+    margin: 10px auto;
+    margin-bottom: 5px;
+}
+
+.btn-topo:hover {
+    background-color: #FF8F00;
+}
+
+/* Footer */
+footer {
+    background-color: #6a0dad;
+    color: white;
+    padding: 40px 20px;
+    position: sticky;
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo-footer img {
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.colunas {
+    display: flex;
+    justify-content: space-between;
+}
+
+.coluna {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.coluna h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.coluna ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.coluna li {
+    margin-bottom: 10px;
+}
+
+.coluna a {
+    color: white;
+    text-decoration: none;
+}
+
+.coluna a:hover {
+    color: #ffd700; /* Dourado */
+}
+
+.informacoes-adicionais {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+/* Media Queries - Responsividade para dispositivos móveis */
+
+/* Media Queries - Responsividade para dispositivos móveis */
+
+@media (max-width: 768px) {
+    /* Ajustes para telas pequenas, como tablets */
+    .bg-container {
+        flex-direction: column; /* Coloca o conteúdo de texto e o formulário em uma coluna */
+        height: auto;            /* Remove a altura fixa para adaptar ao conteúdo */
+        padding: 20px;
+    }
+
+    .text-content {
+        text-align: center;
+        margin-left: 0px;    /* Adiciona margem à esquerda do conteúdo */
+        max-width: 90%;       /* Limita a largura do conteúdo de texto */
+        margin-top: 30px;     /* Aumenta a margem superior do texto */
+    }
+
+
+    .form-container {
+        margin-right: 50px;   /* Ajusta a margem à direita do formulário */
+        margin-left: 50px;    /* Ajusta a margem à esquerda do formulário */
+        margin-top: 30px;     /* Aumenta a margem superior do formulário */
+        max-width: 100%; /* Deixa o formulário ocupar toda a largura */
+        width: 90%;      /* Ajusta a largura do formulário */
+        margin-top: 10px; /* Espaçamento no topo */
+    }
+
+    h1 {
+        font-size: 40px; /* Diminui o tamanho do título */
+        margin-top: 20px;
+    }
+
+    h2 {
+        font-size: 10px; /* Diminui o tamanho do subtítulo */
+        margin-top: 15px;
+    }
+
+    .boas-vindas {
+        font-size: 18px; /* Diminui o tamanho da frase de boas-vindas */
+    text-align: center;
+    margin-top: 4px;
+    margin-bottom: 8px;
+    }
+
+    .form-description {
+        font-size: 16px; /* Diminui o tamanho do texto explicativo */
+    }
+
+    input[type="submit"] {
+        width: 100%; /* Faz o botão ocupar toda a largura disponível */
+        font-size: 14px; /* Ajusta o tamanho da fonte do botão */
+    }
+
+    section video {
+        width: 90%;            /* Para tablets, o vídeo ocupa 90% da largura da tela */
+        max-width: 500px;      /* Reduz o tamanho máximo do vídeo */
+    }
+
+
+    .logo-centralizada img {
+        max-width: 120px; /* Reduz o tamanho da logo */
+    }
+
+    .colunas {
+        flex-direction: column; /* Alinha as colunas em uma única coluna */
+    }
+
+    .coluna {
+        margin-right: 0;
+        margin-bottom: 20px; /* Espaçamento entre as colunas */
+    }
+
+    .footer-content {
+        padding: 20px; /* Ajusta o espaçamento dentro do rodapé */
+    }
+
+    .informacoes-adicionais {
+        font-size: 0.8em; /* Diminui o tamanho da fonte */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Ajustes para telas muito pequenas, como smartphones */
+    h1 {
+        font-size: 32px; /* Reduz ainda mais o tamanho do título */
+        margin-top: 10px; /* Espaçamento no topo */
+    }
+
+    h2 {
+        font-size: 16px; /* Reduz o tamanho do subtítulo */
+        margin-top: 10px; /* Espaçamento no topo */
+        margin-bottom: 15px;
+    }
+
+    .boas-vindas {
+        font-size: 12px; /* Diminui o tamanho da frase de boas-vindas */
+        margin-top:0 px
+    }
+
+    .form-container {
+        padding: 15px; /* Ajusta o preenchimento do formulário */
+        width: 100%;  /* Faz o formulário ocupar toda a largura */
+    }
+
+    input[type="submit"] {
+        width: 100%; /* Faz o botão ocupar toda a largura disponível */
+        font-size: 12px; /* Ajusta o tamanho da fonte do botão */
+    }
+
+    section video {
+        width: 95%;            /* Para smartphones, o vídeo ocupa 95% da largura da tela */
+        max-width: 400px;      /* Reduz ainda mais o tamanho máximo do vídeo */
+    }
+
+    .logo-centralizada img {
+        max-width: 100px; /* Reduz o tamanho da logo */
+    }
+
+    .coluna h3 {
+        font-size: 1.2em; /* Diminui o tamanho do título das colunas */
+    }
+
+    .coluna li {
+        font-size: 14px; /* Diminui o tamanho da fonte dos itens das listas */
+    }
+
+    .footer-content {
+        padding: 10px; /* Ajusta o espaçamento dentro do rodapé */
+    }
+
+    .informacoes-adicionais {
+        font-size: 0.75em; /* Diminui ainda mais o tamanho da fonte */
+    }
+}
