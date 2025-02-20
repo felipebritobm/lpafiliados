@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+    <title>Afiliados Casa de Apostas</title>
+
+    <!-- Inserir o link para o Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+   
+</head>
+<body id="topo"> <!-- Adicionado id "topo" para navegação -->
+    <!-- Header -->
+    <header>
+        <div class="faixa-topo">
+            <div class="logo-centralizada">
+                <img src="./components/images/LOGO.png" alt="LOGO">
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Section -->
+    <main>
+        <div class="bg-container">
+            <!-- Título e Subtítulo à esquerda -->
+            <div class="text-content">
+                <p class="boas-vindas">Seja bem-vindo à Casa de Apostas!</p>
+                <h1>Seja Parceiro da </h1>
+                <h1>Casa de Apostas</h1>
+                <h2>Faça seu pré-cadastro que a nossa equipe especializada entrará em contato.</h2>
+            </div>
+        
+            <!-- Formulário à direita -->
+            <div class="form-container">
+                <p class="form-description"> Preencha seus dados de contato! </p>
+
+                <form action="#" method="POST">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite aqui seu nome" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Digite aqui seu email" required>
+                    
+                    <label for="telefone">Telefone(WhatsApp):</label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="Digite aqui seu telefone" required>
+                    
+                    <input type="submit" value="Inscreva-se">
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- Video Section -->
+    <section>
+        <p><strong>Confira o depoimento de um dos afiliados</strong></p> <!-- Negrito no título -->
+        <video width="640" height="360" controls>
+            <source src="caminho-do-video.mp4" type="video/mp4">
+            <source src="caminho-do-video.webm" type="video/webm">
+            Seu navegador não suporta o vídeo.
+        </video>
+        <a href="#topo"> <!-- Link para o topo -->
+            <button class="btn-topo">Inscreva-se</button>
+        </a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="logo-footer">
+                <img src="./components/images/LOGO.png" alt="LOGO">
+            </div>
+            <div class="colunas">
+                <div class="coluna">
+                    <h3>Social</h3>
+                    <ul>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">X</a></li>
+                    </ul>
+                </div>
+                <div class="coluna">
+                    <h3>Notícias</h3>
+                    <ul>
+                        <li><a href="#">Blog da Casa</a></li>
+                        <li><a href="#">Promoções</a></li>
+                    </ul>
+                </div>
+                <div class="coluna">
+                    <h3>Políticas</h3>
+                    <ul>
+                        <li><a href="#">Termos e Condições</a></li>
+                        <li><a href="#">Políticas de Privacidade</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="coluna">
+                    <h3>Empresa</h3>
+                    <ul>
+                        <li><a href="#">Sobre a Empresa</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="informacoes-adicionais">
+                <p>Casa de Apostas</p>
+                <p>Todos os direitos reservados.</p>
+                <p>Email: afiliados@casadeapostas.com</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
